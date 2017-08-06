@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title Altzaryc
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %p.notice= notice
+    %p.alert= alert
+    = link_to "Registrarse", new_user_registration_path
+    = link_to "Iniciar Sesion", new_user_session_path
+
+    = yield
